@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
   <div class="launcher-container">
     <div class="left-section">
       <h1>RatCraft Launcher</h1>
-      <p>A Custom build of Eaglercraft 1.5.2 and 1.8.8</p>
+      <p>A Custom build of All Eaglercraft clients and versions</p>
      <p>Also it has TONS of custom edits (Latest build 36 of 1.5.2) (1.3 discontinued, click <a href='1.3'>here</a> to play 1.3)</p>
       <p>Downloads for Offline available here: <a href='https://github.com/ratclient/ratclient.github.io/releases/tag/1.8ratxresent'>Changelog/Download</a></p>
     </div>
@@ -16,6 +17,10 @@
       <select id="version-dropdown">
         <option value="1.5.2">1.5.2</option>
         <option value="1.8">1.8</option>
+        <option value="1.9">1.9</option>
+        <option value="1.12">1.12</option>
+        <option value="Resent Client">Resent Client</option>
+        <option value="Starlike Client">Starlike Client</option> 
       </select>
          <button id="launch-button">Launch Game</button>
     </div>
@@ -86,6 +91,14 @@ document.getElementById('launch-button').addEventListener('click', function() {
     window.location.href = '1.5.html';
   } else if (version === '1.8') {
     window.location.href = '1.8.html';
+  } else if (version === '1.9') {
+    window.location.href = '1.9.html';
+  } else if (version === '1.12') {
+    window.location.href = '1.12.html';
+  } else if (version === 'Resent Client') {
+    window.location.href = 'resentclient.html';
+  } else if (version === 'starlikeclient') {
+    window.location.href = 'starlikeclient.html';
   }
 });
 
